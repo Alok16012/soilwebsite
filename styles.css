@@ -185,7 +185,7 @@ a {
 
 .hero {
   position: relative;
-  min-height: 760px;
+  min-height: clamp(560px, 37.5vw, 760px);
   color: var(--white);
   overflow: hidden;
 }
@@ -216,7 +216,7 @@ a {
   grid-template-columns: minmax(0, 760px);
   gap: 56px;
   align-items: center;
-  min-height: 760px;
+  min-height: clamp(560px, 37.5vw, 760px);
   padding-top: 96px;
 }
 
@@ -1183,6 +1183,12 @@ section {
 
   .hero {
     min-height: auto;
+  }
+
+  .hero-bg {
+    background:
+      linear-gradient(90deg, rgba(7, 20, 13, 0.92) 0%, rgba(7, 20, 13, 0.69) 43%, rgba(7, 20, 13, 0.1) 100%),
+      url("assets/media/hero-billboard-farmer.jpeg") center top / cover no-repeat;
   }
 
   .hero-grid {
