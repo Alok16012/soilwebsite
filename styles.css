@@ -197,10 +197,10 @@ a {
 }
 
 .hero-bg {
+  background-color: var(--green-950);
   background:
     linear-gradient(90deg, rgba(7, 20, 13, 0.92) 0%, rgba(7, 20, 13, 0.69) 43%, rgba(7, 20, 13, 0.1) 100%),
-    url("assets/media/hero-billboard-farmer.jpeg") center / cover;
-  transform: scale(1.02);
+    url("assets/media/hero-billboard-farmer.jpeg") center top / 100% auto no-repeat;
 }
 
 .hero-overlay {
