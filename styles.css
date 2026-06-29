@@ -99,7 +99,7 @@ a {
 .site-nav {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 22px;
   font-size: 13px;
   font-weight: 700;
 }
@@ -199,7 +199,7 @@ a {
 .hero-bg {
   background:
     linear-gradient(90deg, rgba(7, 20, 13, 0.92) 0%, rgba(7, 20, 13, 0.69) 43%, rgba(7, 20, 13, 0.1) 100%),
-    url("https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1800&q=86") center / cover;
+    url("assets/media/hero-billboard-farmer.jpeg") center / cover;
   transform: scale(1.02);
 }
 
@@ -213,7 +213,7 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 680px) minmax(280px, 360px);
+  grid-template-columns: minmax(0, 760px);
   gap: 56px;
   align-items: center;
   min-height: 760px;
@@ -357,7 +357,7 @@ section {
   border-radius: var(--radius);
   background:
     linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
-    url("https://images.unsplash.com/photo-1492496913980-501348b61469?auto=format&fit=crop&w=800&q=82") center / cover;
+    url("assets/media/soil-root-glow.jpeg") center / cover;
   box-shadow: var(--shadow);
 }
 
@@ -443,7 +443,7 @@ section {
   padding: 96px 0;
   background:
     linear-gradient(rgba(247, 250, 241, 0.94), rgba(247, 250, 241, 0.94)),
-    url("https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1800&q=82") center / cover;
+    url("assets/media/rain-seedlings.jpeg") center / cover;
 }
 
 .centered {
@@ -589,7 +589,7 @@ section {
   color: var(--white);
   background:
     linear-gradient(rgba(11, 45, 8, 0.76), rgba(11, 45, 8, 0.76)),
-    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=82") center / cover fixed;
+    url("assets/media/dry-green-transition.jpeg") center / cover fixed;
 }
 
 .stats-grid {
@@ -661,7 +661,7 @@ section {
   color: var(--white);
   background:
     linear-gradient(rgba(11, 45, 8, 0.94), rgba(11, 45, 8, 0.94)),
-    url("https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1800&q=82") center / cover;
+    url("assets/media/hands-sapling.jpeg") center / cover;
 }
 
 .contact-copy h2,
@@ -771,8 +771,7 @@ section {
   inset: 0;
   background:
     linear-gradient(90deg, rgba(7, 20, 13, 0.94) 0%, rgba(7, 20, 13, 0.76) 54%, rgba(7, 20, 13, 0.2) 100%),
-    url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=84") center / cover;
-  transform: scale(1.02);
+    url("assets/media/sustainability-contrast.jpeg") center / cover;
 }
 
 .detail-hero-grid {
@@ -937,7 +936,7 @@ section {
   text-align: center;
   background:
     linear-gradient(rgba(11, 45, 8, 0.93), rgba(11, 45, 8, 0.93)),
-    url("https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&w=1800&q=84") center / cover;
+    url("assets/media/rain-seedlings.jpeg") center / cover;
 }
 
 .detail-cta .mini-label {
@@ -952,6 +951,154 @@ section {
   max-width: 680px;
   margin: 0 auto 26px;
   color: rgba(255, 255, 255, 0.74);
+}
+
+.page-hero {
+  position: relative;
+  min-height: 560px;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  align-content: center;
+  min-height: 560px;
+  padding-top: 112px;
+}
+
+.page-hero h1 {
+  max-width: 880px;
+  margin: 16px 0;
+  font-size: clamp(42px, 6vw, 78px);
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.page-hero p {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.process-grid div {
+  min-height: 86px;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  color: var(--green-900);
+  text-align: center;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.solution-list {
+  display: grid;
+  gap: 22px;
+}
+
+.solution-row {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1.15fr);
+  align-items: stretch;
+}
+
+.solution-row img {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+  aspect-ratio: auto;
+}
+
+.solution-row div {
+  padding: 30px;
+}
+
+.solution-row .check-list {
+  margin-bottom: 0;
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact-page {
+  background:
+    linear-gradient(rgba(11, 45, 8, 0.94), rgba(11, 45, 8, 0.94)),
+    url("assets/media/hand-soil-closeup.jpeg") center / cover;
+}
+
+.media-band {
+  padding: 90px 0;
+  background: var(--cream);
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.media-card {
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 14px 35px rgba(17, 40, 18, 0.08);
+}
+
+.media-card img,
+.media-card video {
+  width: 100%;
+  aspect-ratio: 1.2;
+  object-fit: cover;
+}
+
+.media-card.tall img {
+  aspect-ratio: 0.78;
+}
+
+.media-card.wide {
+  grid-column: span 2;
+}
+
+.media-card.wide img,
+.media-card.wide video {
+  aspect-ratio: 1.85;
+}
+
+.media-card div {
+  padding: 16px;
+}
+
+.media-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--leaf);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.media-card h3 {
+  margin: 0;
+  color: var(--green-950);
+  font-size: 16px;
+  line-height: 1.35;
 }
 
 .site-footer {
@@ -1059,8 +1206,15 @@ section {
   .stats-grid,
   .detail-three,
   .detail-info-grid,
+  .process-grid,
+  .role-grid,
+  .media-grid,
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solution-row {
+    grid-template-columns: 1fr;
   }
 
   .section-heading {
@@ -1152,8 +1306,17 @@ section {
     min-height: auto;
   }
 
+  .page-hero {
+    min-height: auto;
+  }
+
   .detail-hero-grid {
     padding-top: 142px;
+  }
+
+  .page-hero-inner {
+    min-height: auto;
+    padding: 142px 0 70px;
   }
 
   .detail-hero h1 {
@@ -1162,7 +1325,18 @@ section {
     line-height: 1.05;
   }
 
+  .page-hero h1 {
+    max-width: 350px;
+    font-size: clamp(40px, 11vw, 50px);
+    line-height: 1.05;
+  }
+
   .detail-hero p {
+    max-width: 350px;
+    font-size: 15px;
+  }
+
+  .page-hero p {
     max-width: 350px;
     font-size: 15px;
   }
@@ -1201,8 +1375,19 @@ section {
   .footer-grid,
   .detail-three,
   .detail-info-grid,
+  .process-grid,
+  .role-grid,
+  .media-grid,
   .enquiry-form {
     grid-template-columns: 1fr;
+  }
+
+  .media-card.wide {
+    grid-column: span 1;
+  }
+
+  .solution-row img {
+    min-height: 240px;
   }
 
   .stats-grid div {
