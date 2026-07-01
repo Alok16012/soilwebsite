@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -39,11 +39,11 @@
 
     <main>
       <section class="page-hero">
-        <div class="detail-bg"></div>
+        <div class="detail-bg" data-cms-bg="about.hero.image"></div>
         <div class="container page-hero-inner">
-          <div class="eyebrow"><span></span>About SOIL</div>
-          <h1>Transforming Agriculture Through Nature, Science & Sustainability</h1>
-          <p>
+          <div class="eyebrow"><span></span><strong data-cms-text="about.hero.eyebrow">About SOIL</strong></div>
+          <h1 data-cms-text="about.hero.title">Transforming Agriculture Through Nature, Science & Sustainability</h1>
+          <p data-cms-text="about.hero.body">
             At SOIL, healthy soil is the foundation of healthy food, healthy farmers, and a healthy nation.
             We restore soil health, empower farmers, and create sustainable farm-to-market opportunities.
           </p>
@@ -53,9 +53,9 @@
       <section class="detail-section">
         <div class="container detail-layout">
           <article class="detail-panel">
-            <div class="mini-label">Welcome to SOIL</div>
-            <h2>Restoring soil for a stronger agricultural future</h2>
-            <p>
+            <div class="mini-label" data-cms-text="about.intro.label">Welcome to SOIL</div>
+            <h2 data-cms-text="about.intro.title">Restoring soil for a stronger agricultural future</h2>
+            <p data-cms-text="about.intro.body">
               SOIL (Sheevar Organic Industrial Limited) promotes sustainable farming through bio-fertilizers,
               bio-inputs, organic farming solutions, and assured market linkages for farmers. Our mission is
               to reduce dependence on harmful chemical fertilizers and pesticides while improving soil fertility,
@@ -161,6 +161,7 @@
       </div>
       <div class="footer-bottom"><span>Copyright © 2026 SOIL. All rights reserved.</span></div>
     </footer>
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
+    <script src="cms-content.js?v=1"></script>
   </body>
 </html>

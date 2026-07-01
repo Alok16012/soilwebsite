@@ -25,7 +25,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -54,22 +54,22 @@
 
     <main>
       <section class="hero" id="home">
-        <div class="hero-bg" role="img" aria-label="Organic farming field"></div>
+        <div class="hero-bg" role="img" aria-label="Organic farming field" data-cms-bg="home.hero.image"></div>
         <div class="hero-overlay"></div>
         <div class="container hero-grid">
           <div class="hero-copy">
             <div class="eyebrow">
               <span></span>
-              Transforming Agriculture Through Nature, Science & Sustainability
+              <strong data-cms-text="home.hero.eyebrow">Transforming Agriculture Through Nature, Science & Sustainability</strong>
             </div>
-            <h1>Here The Life <span>Germinates</span></h1>
-            <p>
+            <h1><span data-cms-text="home.hero.title">Here The Life</span> <span data-cms-text="home.hero.accent">Germinates</span></h1>
+            <p data-cms-text="home.hero.body">
               SOIL promotes sustainable farming through bio-fertilizers, bio-inputs,
               organic farming solutions, soil health support, and trusted market linkages for farmers.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="solutions.html">Explore Solutions</a>
-              <a class="btn btn-secondary" href="dealer-distributor.html">Become a Partner</a>
+              <a class="btn btn-primary" href="solutions.html" data-cms-text="home.hero.primaryButton">Explore Solutions</a>
+              <a class="btn btn-secondary" href="dealer-distributor.html" data-cms-text="home.hero.secondaryButton">Become a Partner</a>
             </div>
           </div>
         </div>
@@ -81,6 +81,7 @@
             <img
               class="main-photo"
               src="assets/media/farmer-p-soul-field.jpeg"
+              data-cms-src="home.about.image"
               alt="Farmer holding SOIL P-SOUL product in a crop field"
             />
             <div class="experience-badge">
@@ -90,9 +91,9 @@
           </div>
 
           <div class="section-copy">
-            <div class="mini-label">About Us</div>
-            <h2>Restoring Soil. Empowering Farmers.</h2>
-            <p>
+            <div class="mini-label" data-cms-text="home.about.label">About Us</div>
+            <h2 data-cms-text="home.about.title">Restoring Soil. Empowering Farmers.</h2>
+            <p data-cms-text="home.about.body">
               At SOIL (Sheevar Organic Industrial Limited), healthy soil is the foundation of
               healthy food, healthy farmers, and a healthy nation. We support Indian agriculture
               with sustainable bio-products, organic farming guidance, and long-term farmer partnerships.
@@ -114,9 +115,9 @@
       <section class="services-section">
         <div class="container">
           <div class="section-heading centered">
-            <div class="mini-label">Why Choose Us</div>
-            <h2>Why Choose <span>SOIL</span></h2>
-            <p>
+            <div class="mini-label" data-cms-text="home.why.label">Why Choose Us</div>
+            <h2 data-cms-text="home.why.title">Why Choose SOIL</h2>
+            <p data-cms-text="home.why.body">
               Scientifically developed bio-products, expert field guidance, and a support system
               built for farmers, dealers, distributors, and sustainable agriculture partners.
             </p>
@@ -393,6 +394,7 @@
       </div>
     </footer>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
+    <script src="cms-content.js?v=1"></script>
   </body>
 </html>

@@ -1,0 +1,134 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "assets/media/uploads"
+public_folder: "/assets/media/uploads"
+
+collections:
+  - name: "site"
+    label: "SOIL Website"
+    files:
+      - name: "content"
+        label: "All Page Headings & Images"
+        file: "data/site-content.json"
+        fields:
+          - label: "Home Page"
+            name: "home"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                  { label: "Title", name: "title", widget: "string" },
+                  { label: "Green Title Word", name: "accent", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Hero Image", name: "image", widget: "image" },
+                  { label: "Primary Button", name: "primaryButton", widget: "string" },
+                  { label: "Secondary Button", name: "secondaryButton", widget: "string" }
+                ] }
+              - { label: "About Preview", name: "about", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Image", name: "image", widget: "image" }
+                ] }
+              - { label: "Why Choose Heading", name: "why", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" }
+                ] }
+          - label: "About Page"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Hero Image", name: "image", widget: "image" }
+                ] }
+              - { label: "Intro", name: "intro", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" }
+                ] }
+          - label: "Solutions Page"
+            name: "solutions"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Hero Image", name: "image", widget: "image" }
+                ] }
+              - { label: "Section Heading", name: "heading", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" }
+                ] }
+              - label: "Solution Cards"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Category", name: "category", widget: "string" }
+                  - { label: "Heading", name: "title", widget: "string" }
+                  - { label: "Body", name: "body", widget: "text" }
+                  - { label: "Image", name: "image", widget: "image" }
+          - label: "Dealer Page"
+            name: "dealer"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Hero Image", name: "image", widget: "image" }
+                ] }
+              - { label: "Support Heading", name: "supportHeading", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" }
+                ] }
+              - { label: "Media Heading", name: "mediaHeading", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" }
+                ] }
+          - label: "Gallery Page"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Hero Image", name: "image", widget: "image" }
+                ] }
+              - label: "Gallery Section Headings"
+                name: "sections"
+                widget: "list"
+                fields:
+                  - { label: "Small Label", name: "label", widget: "string" }
+                  - { label: "Heading", name: "title", widget: "string" }
+          - label: "Contact Page"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Eyebrow", name: "eyebrow", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" },
+                  { label: "Hero Image", name: "image", widget: "image" }
+                ] }
+              - { label: "Form Intro", name: "form", widget: "object", fields: [
+                  { label: "Small Label", name: "label", widget: "string" },
+                  { label: "Heading", name: "title", widget: "string" },
+                  { label: "Body", name: "body", widget: "text" }
+                ] }
+          - label: "Product Detail Page"
+            name: "productDetail"
+            widget: "object"
+            fields:
+              - { label: "Hero", name: "hero", widget: "object", fields: [
+                  { label: "Hero Background Image", name: "image", widget: "image" }
+                ] }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=6" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <header class="site-header" data-header>
@@ -21,18 +21,18 @@
 
     <main>
       <section class="page-hero">
-        <div class="detail-bg"></div>
+        <div class="detail-bg" data-cms-bg="solutions.hero.image"></div>
         <div class="container page-hero-inner">
-          <div class="eyebrow"><span></span>SOIL Solutions</div>
-          <h1>Bio-products, organic farming guidance, and market support</h1>
-          <p>SOIL supports farmers from soil health management to organic transition, quality inspection, and eligible crop procurement.</p>
+          <div class="eyebrow"><span></span><strong data-cms-text="solutions.hero.eyebrow">SOIL Solutions</strong></div>
+          <h1 data-cms-text="solutions.hero.title">Bio-products, organic farming guidance, and market support</h1>
+          <p data-cms-text="solutions.hero.body">SOIL supports farmers from soil health management to organic transition, quality inspection, and eligible crop procurement.</p>
         </div>
       </section>
 
       <section class="products-section">
         <div class="container">
           <div class="section-heading">
-            <div><div class="mini-label">What We Do</div><h2>Detailed <span>Solutions</span></h2></div>
+            <div><div class="mini-label" data-cms-text="solutions.heading.label">What We Do</div><h2 data-cms-text="solutions.heading.title">Detailed Solutions</h2></div>
             <div class="product-filters" aria-label="Product filters">
               <button class="active" type="button" data-filter="all">All</button>
               <button type="button" data-filter="bio">Bio Products</button>
@@ -42,20 +42,20 @@
           </div>
           <div class="solution-list">
             <article class="solution-row product-card" data-category="bio">
-              <img src="assets/media/product-nitrogrow-front.jpeg" alt="SOIL NitroGROW bio fertilizer bottle" />
-              <div><span>Bio Products</span><h3>Bio Fertilizers</h3><p>Scientifically developed bio-fertilizers improve soil fertility naturally by increasing beneficial microorganisms, enhancing nutrient availability, and promoting healthy plant growth.</p><ul class="check-list"><li>Improves soil health</li><li>Enhances crop yield</li><li>Reduces chemical fertilizer usage</li><li>Safe for all crops</li></ul><a href="product-detail.html?product=bio-fertilizers">View Details</a></div>
+              <img src="assets/media/product-nitrogrow-front.jpeg" data-cms-src="solutions.items.0.image" alt="SOIL NitroGROW bio fertilizer bottle" />
+              <div><span data-cms-text="solutions.items.0.category">Bio Products</span><h3 data-cms-text="solutions.items.0.title">Bio Fertilizers</h3><p data-cms-text="solutions.items.0.body">Scientifically developed bio-fertilizers improve soil fertility naturally by increasing beneficial microorganisms, enhancing nutrient availability, and promoting healthy plant growth.</p><ul class="check-list"><li>Improves soil health</li><li>Enhances crop yield</li><li>Reduces chemical fertilizer usage</li><li>Safe for all crops</li></ul><a href="product-detail.html?product=bio-fertilizers">View Details</a></div>
             </article>
             <article class="solution-row product-card" data-category="organic">
-              <img src="assets/media/soil-root-glow.jpeg" alt="Healthy roots and organic soil biology" />
-              <div><span>Organic Farming</span><h3>Organic Farming Solutions</h3><p>SOIL helps farmers gradually transition from conventional chemical farming to sustainable organic farming with farm assessment, soil health analysis, crop nutrition planning, and field support.</p><ul class="check-list"><li>Farm assessment</li><li>Soil health analysis</li><li>Crop nutrition planning</li><li>Pest and disease management</li></ul><a href="product-detail.html?product=organic-farming-solutions">View Details</a></div>
+              <img src="assets/media/soil-root-glow.jpeg" data-cms-src="solutions.items.1.image" alt="Healthy roots and organic soil biology" />
+              <div><span data-cms-text="solutions.items.1.category">Organic Farming</span><h3 data-cms-text="solutions.items.1.title">Organic Farming Solutions</h3><p data-cms-text="solutions.items.1.body">SOIL helps farmers gradually transition from conventional chemical farming to sustainable organic farming with farm assessment, soil health analysis, crop nutrition planning, and field support.</p><ul class="check-list"><li>Farm assessment</li><li>Soil health analysis</li><li>Crop nutrition planning</li><li>Pest and disease management</li></ul><a href="product-detail.html?product=organic-farming-solutions">View Details</a></div>
             </article>
             <article class="solution-row product-card" data-category="support">
-              <img src="assets/media/dry-green-transition.jpeg" alt="Chemical residue reduction and green transition" />
-              <div><span>Farmer Support</span><h3>Chemical Residue Reduction Program</h3><p>A structured transition program that focuses on reducing chemical residues through scientific biological solutions and improved cultivation practices.</p><ul class="check-list"><li>Gradual soil restoration</li><li>Field monitoring</li><li>Biological crop support</li><li>Organic transition planning</li></ul><a href="product-detail.html?product=chemical-residue-reduction">View Details</a></div>
+              <img src="assets/media/dry-green-transition.jpeg" data-cms-src="solutions.items.2.image" alt="Chemical residue reduction and green transition" />
+              <div><span data-cms-text="solutions.items.2.category">Farmer Support</span><h3 data-cms-text="solutions.items.2.title">Chemical Residue Reduction Program</h3><p data-cms-text="solutions.items.2.body">A structured transition program that focuses on reducing chemical residues through scientific biological solutions and improved cultivation practices.</p><ul class="check-list"><li>Gradual soil restoration</li><li>Field monitoring</li><li>Biological crop support</li><li>Organic transition planning</li></ul><a href="product-detail.html?product=chemical-residue-reduction">View Details</a></div>
             </article>
             <article class="solution-row product-card" data-category="support">
-              <img src="assets/media/product-nitrogrow-farmer.jpeg" alt="SOIL product field presentation" />
-              <div><span>Market Linkage</span><h3>Organic Crop Procurement</h3><p>SOIL supports eligible organic produce procurement cultivated under recommended practices, subject to quality standards and procurement policies.</p><ul class="check-list"><li>Quality inspection</li><li>Market availability support</li><li>Farm-to-market value chain</li><li>Sustainable income opportunity</li></ul><a href="product-detail.html?product=organic-crop-procurement">View Details</a></div>
+              <img src="assets/media/product-nitrogrow-farmer.jpeg" data-cms-src="solutions.items.3.image" alt="SOIL product field presentation" />
+              <div><span data-cms-text="solutions.items.3.category">Market Linkage</span><h3 data-cms-text="solutions.items.3.title">Organic Crop Procurement</h3><p data-cms-text="solutions.items.3.body">SOIL supports eligible organic produce procurement cultivated under recommended practices, subject to quality standards and procurement policies.</p><ul class="check-list"><li>Quality inspection</li><li>Market availability support</li><li>Farm-to-market value chain</li><li>Sustainable income opportunity</li></ul><a href="product-detail.html?product=organic-crop-procurement">View Details</a></div>
             </article>
           </div>
         </div>
@@ -71,6 +71,7 @@
       </div>
       <div class="footer-bottom"><span>Copyright © 2026 SOIL. All rights reserved.</span></div>
     </footer>
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=7"></script>
+    <script src="cms-content.js?v=1"></script>
   </body>
 </html>

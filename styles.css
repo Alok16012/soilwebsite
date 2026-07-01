@@ -197,10 +197,11 @@ a {
 }
 
 .hero-bg {
+  --hero-bg-image: url("assets/media/hero-billboard-farmer.jpeg");
   background-color: var(--green-950);
   background:
     linear-gradient(90deg, rgba(7, 20, 13, 0.92) 0%, rgba(7, 20, 13, 0.69) 43%, rgba(7, 20, 13, 0.1) 100%),
-    url("assets/media/hero-billboard-farmer.jpeg") center top / 100% auto no-repeat;
+    var(--hero-bg-image) center top / 100% auto no-repeat;
 }
 
 .hero-overlay {
@@ -767,11 +768,12 @@ section {
 }
 
 .detail-bg {
+  --page-bg-image: url("assets/media/sustainability-contrast.jpeg");
   position: absolute;
   inset: 0;
   background:
     linear-gradient(90deg, rgba(7, 20, 13, 0.94) 0%, rgba(7, 20, 13, 0.76) 54%, rgba(7, 20, 13, 0.2) 100%),
-    url("assets/media/sustainability-contrast.jpeg") center / cover;
+    var(--page-bg-image) center / cover;
 }
 
 .detail-hero-grid {
@@ -1188,7 +1190,7 @@ section {
   .hero-bg {
     background:
       linear-gradient(90deg, rgba(7, 20, 13, 0.92) 0%, rgba(7, 20, 13, 0.69) 43%, rgba(7, 20, 13, 0.1) 100%),
-      url("assets/media/hero-billboard-farmer.jpeg") center top / cover no-repeat;
+      var(--hero-bg-image) center top / cover no-repeat;
   }
 
   .hero-grid {
